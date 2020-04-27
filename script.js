@@ -54,11 +54,11 @@ class Employees {
         }
 }
 
-const pierre = new Employees( 1, 'pierre','giraud', '3 January 1969', '3 January 1990', 2000)
-const mathilde = new Employees( 1, 'mathilde','p', '3 January 1969', '3 January 1990', 2000)
-const anne = new Employees( 1, 'anne','giraud', '3 January 1969', '3 January 1990', 2000)
+const pierre = new Employees( 1, 'pierre','giraud', '3 January 1969', '3 January 1990', 3000)
+const mathilde = new Employees( 2, 'mathilde','prechaud', '5 May 1989', '14 August 2000', 2600)
+const anne = new Employees( 3, 'anne','frichard', '20 February 1977', '13 May 1990', 4000)
 
-console.log(pierre.getAge());
-console.log(pierre.getAnciennete());
-console.log(pierre.augmenterSalaireByAnciennete());
+
 console.log(pierre.afficherEmployé());
+console.log(mathilde.afficherEmployé());
+console.log(anne.afficherEmployé());

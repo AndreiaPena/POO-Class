@@ -3,7 +3,7 @@ class Employees {
 
         this.matricule = id; 
         this.nom = nom.toUpperCase(); 
-        this.prenom = prenom.substr(0,1).toUpperCase() + prenom.substr(1); 
+        this.prenom = prenom[0].toUpperCase() + prenom.substr(1) ; 
         this.naissance = naissance; 
         this.embauche = em; 
         this.salaire = money
@@ -54,9 +54,9 @@ class Employees {
         }
 }
 
-const pierre = new Employees( 1, 'pierre','giraud', '3 January 1969', '3 January 1990', 3000)
-const mathilde = new Employees( 2, 'mathilde','prechaud', '5 May 1989', '14 August 2000', 2600)
-const anne = new Employees( 3, 'anne','frichard', '20 February 1977', '13 May 1990', 4000)
+const pierre = new Employees( 1, 'Giraud','pierre', '3 January 1969', '3 January 1990', 3000)
+const mathilde = new Employees( 2, 'prechaud','mathilde', '5 May 1989', '14 August 2000', 2600)
+const anne = new Employees( 3,'frichard', 'anne', '20 February 1977', '13 May 1990', 4000)
 
 
 console.log(pierre.afficherEmployé());
